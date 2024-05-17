@@ -9,18 +9,21 @@
             margin: 0;
             padding: 0;
         }
+
         body{
-            background-color: hsl(212, 45%, 89%);
+            background-color: hsl(212 , 45%, 89%);
             height: 100vh;
             width: 100vw;
-            display: flex;
-            align-items: center;
+            display: flex; /*To make the div float in the middle of the webpage*/
             justify-content: center;
+            align-items: center;
         }
+
+        /*The div of the qr code*/
         .parent{
-            height: 375px;
+            height: 400px;
             width: 225px;
-            background-color: hsl(0, 0%, 100%);
+            background-color: white;
             border-radius: 1rem;
         }
         img{
@@ -29,8 +32,8 @@
             border-radius: .75rem;
         }
         .img{
-            padding-left: 10px;
             padding-top: 10px;
+            padding-left: 10px;
         }
         h1 , p{
             font-size: 15px;
@@ -38,22 +41,45 @@
             padding-top: 10px;
             padding-right: 10px;
             font-family: cursive;
+        }
+        #p3{
+            display: block;
+            padding-top: 12.5px;
+            font-family: cursive;
+            font-size: 12px;
+            font-weight: 700;
+            padding-left: 5px;
+        }
+        .footer{
             display: flex;
         }
+        #avatar{
+            height: 25px;
+            width: 25px;
+            padding-left: 15px;
+            padding-top: 10px;
+            display: block;
+        }
+
+        /*
+            That's it. Happy Coding!
+        */
     </style>
 </head>
 <body>
     <div class="parent">
         <div class="img">
-            <img src="images/frame.png" alt="">
+            <img src="frame.png" alt="">
         </div>
-        <div class="heading">
-            <h1>
-                Improve your front end skills by building projects.
-            </h1>
+        <div class="texts">
+            <h1>Improve your front-end journey by building projects</h1>
             <p>
-                Scan the Qr code to connect with me on social media.
+                Scan the QR code to connect with me.
             </p>
+        </div>
+        <div class="footer">
+            <img src="atshakib.png" alt="" id="avatar">
+            <p id="p3">A T Shakib</p>
         </div>
     </div>
 </body>
