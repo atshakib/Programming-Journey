@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: hsl(212, 45%, 89%);
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .parent{
+            height: 375px;
+            width: 225px;
+            background-color: hsl(0, 0%, 100%);
+            border-radius: 1rem;
+        }
+        img{
+            width: 205px;
+            height: 220px;
+            border-radius: .75rem;
+        }
+        .img{
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        h1 , p{
+            font-size: 15px;
+            padding-left: 15px;
+            padding-top: 10px;
+            padding-right: 10px;
+            font-family: cursive;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="img">
+            <img src="images/frame.png" alt="">
+        </div>
+        <div class="heading">
+            <h1>
+                Improve your front end skills by building projects.
+            </h1>
+            <p>
+                Scan the Qr code to connect with me on social media.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
